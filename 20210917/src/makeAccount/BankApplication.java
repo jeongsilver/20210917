@@ -68,7 +68,7 @@ public class BankApplication { // 이정은
 		System.out.println("예금하기");
 		System.out.println("------");
 		String searchAno = readStr("계좌번호: ");
-
+//
 		if (findAccount(searchAno) != null) {
 			int money = readInt("예금액: ");
 			int newMoney = findAccount(searchAno).getBalance() + money;
@@ -77,20 +77,22 @@ public class BankApplication { // 이정은
 		}
 	}
 
-//	int money = readInt("예금액: ");
+//		int money = readInt("예금액: ");
 
-//	for(Account ac : accountArray) {
-//		if(ac!=null && searchAno.equals(ac.getAno())) {
-//			int newBalance = ac.getBalance()+money;
-//			ac.setBalance(newBalance);
-//			System.out.println("결과: 예금이 성공되었습니다.");
-//			break;
-//			
-//			System.out.println("계좌번호를 다시 입력해주세요.");			}
-//	}		}else {
+//		for (Account ac : accountArray) {
+//			if (ac != null && searchAno.equals(ac.getAno())) {
+//				int newBalance = ac.getBalance() + money;
+//				ac.setBalance(newBalance);
+//				System.out.println("결과: 예금이 성공되었습니다.");
+//				break;
 //
+//			} else {
+//				System.out.println("계좌번호를 다시 입력해주세요.");
+//			}
+//		}
+//	}
 
-	private static void withdraw() { //이정은
+	private static void withdraw() { // 이정은
 		String searchAno = readStr("계좌번호: ");
 		if (findAccount(searchAno) != null) {
 			int money = readInt("출금액: ");
