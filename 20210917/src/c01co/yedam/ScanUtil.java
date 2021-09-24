@@ -2,6 +2,8 @@ package c01co.yedam;
 
 import java.util.Scanner;
 
+import co.yedam.eumerate.Gender;
+
 public class ScanUtil { // 다른 패키지에서도 접근할 수 있게 public
 	static Scanner scn = new Scanner(System.in);
 
@@ -19,4 +21,5 @@ public class ScanUtil { // 다른 패키지에서도 접근할 수 있게 public
 		System.out.println(msg);
 		return scn.nextLine();
 	}
+	
 }
